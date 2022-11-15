@@ -1,9 +1,5 @@
-numpy
 pandas
-seaborn
-matplotlib
-plotly
 scikit-learn
 streamlit
-pandas_profiling
-streamlit_pandas_profiling
+Pillow
+altair
