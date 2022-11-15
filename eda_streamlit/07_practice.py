@@ -6,10 +6,12 @@ import altair as alt
 from PIL import Image
 
 ## Page Title
+current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
+logo = current_dir / "assets" / "logo.jpg"
+logo = Image.open(logo)
 
-image= Image.open('logo.jpg')
 
-st.image(image, use_column_width=True)
+st.image(logo, use_column_width=True)
 st.write('''
 # DNA Nucleotide Count Web App 
 This app counts the nucleotide composition of query DNA!
