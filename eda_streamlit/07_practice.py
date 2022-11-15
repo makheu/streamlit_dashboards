@@ -4,6 +4,7 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 from PIL import Image
+from pathlib import Path
 
 ## Page Title
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
